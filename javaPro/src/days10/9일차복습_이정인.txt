@@ -1,0 +1,110 @@
+1. 카드번호(String card ="7655-8988-9234-5677" )를
+   임의의 2곳을 * 로 바꿔서 출력하는 코딩을 하세요 .
+   출력형식:
+           7655-****-****-5677
+           ****-8988-9234-****
+		
+		String card = "7655-8988-9234-5677";
+		String[] splitArr = card.split("-");
+		
+		int[] arr= new Random().ints(0,4).distinct().limit(2).toArray();
+		
+		splitArr[arr[0]] = "****";
+		splitArr[arr[1]] = "****";
+		
+		System.out.println( String.join("-", splitArr));
+		
+           
+2. 10진수 정수를 입력받아서 2진수로 출력하는 메서드를 선언하세요. 
+   (조건: 제어문을 사용해서 직접 로직으로 처리하세요.) 
+   (2진수 출력형식: "00001010")
+   (메서드명 : binaryConvert)
+   
+3. 주민등록번호를 매개변수로 입력받아서 검증해서 boolean형으로 반환하는 메서드를 선언하세요.
+   ( 메서드명 :  isRrnCheck )
+   /*
+	‘ㅍ’은 주민등록번호에 오류가 없는지 확인하는 검증번호로, 아래와 같은 특수한 규칙으로 만든다.
+	ㅍ = 11-{(2×ㄱ+3×ㄴ+4×ㄷ+5×ㄹ+6×ㅁ+7×ㅂ+8×ㅅ+9×ㅇ+2×ㅈ+3×ㅊ+4×ㅋ+5×ㅌ) % 11}
+	즉, 소괄호 안에 있는 것을 계산한 값을 11로 나눠서 나온 나머지를 11에서 뺀 값이 ㅍ이다. 
+	(단, 10은 0, 11은 1로 표기한다.)
+   */    
+		String rrn = "981114-2222222";
+		boolean isRrnCheck = isValidRrnNum(rrn);
+		System.out.println(isRrnCheck ? "유효성 검증 o" : "유효성 검증 x");
+
+	private static boolean isValidRrnNum(String rrn) {
+		
+		int index = 0;
+		int sum = 0;
+		int[] multi = {2,3,4,5,6,7,8,9,2,3,4,5};
+		
+		for(int i=0; i<13; i++) {
+			String str = rrn.substring(i,i+1);
+			if (str.equals("-")) {
+				continue;
+			} // if
+			sum += Integer.parseInt(str)*multi[index++];
+		}
+		int result = 11-((sum%11)%10);
+		int match = Integer.parseInt(rrn.substring(13,14));
+		
+		if (result == match) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+              
+4. 주민등록번호를 매개변수로 입력받아서 만나이를 계산해서 반환하는 메서드를 선언하세요.
+    ( 만나이 = 올해년도-생일년도     생일이지나지않으면 -1 )
+    
+		String rrn = "981114-2222222";
+
+		int americaAge = getAmericaAge(rrn);
+		System.out.println(americaAge);
+
+	private static int getAmericaAge(String rrn) {
+		LocalDate lod = LocalDate.now();
+		int currentYear = lod.getYear();
+		int birthYear = getYear(rrn);
+
+		int amerianAge = currentYear - birthYear;
+
+		int birthM = Integer.parseInt(rrn.substring(2,4));
+		int birthD = Integer.parseInt(rrn.substring(4,6));
+
+		LocalDate birthDay = LocalDate.of(currentYear, birthM, birthD);
+
+		int minus = lod.getDayOfYear() - birthDay.getDayOfYear();
+
+		amerianAge = minus>= 0 ? amerianAge : amerianAge-1;
+
+		return amerianAge;
+	}
+
+	private static int getYear(String rrn) {
+		int year = getCentury(rrn) + Integer.parseInt(rrn.substring(0,2));
+
+		return year;
+	}
+
+	private static int getCentury(String rrn) {
+
+		int gender = rrn.charAt(7) - '0'; // char 숫자 '0' - '9' 에서 '0'을 빼면 int 형 됨
+		switch (gender) {
+		case 9:
+		case 0:
+			return 1800;
+		case 6:
+		case 5:
+		case 2:
+		case 1:
+			return 1900;
+		default:
+			return 2000;
+		} // switch
+	}
+
+   
+
+           
