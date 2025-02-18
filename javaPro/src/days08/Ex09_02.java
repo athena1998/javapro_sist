@@ -17,12 +17,10 @@ public class Ex09_02 {
 		// com.util.MyCalendar.java
 		
 		// [1]
-		/*
 		for (int i = 1; i <= 2025; i++) {
 			if( MyCalendar.isLeapYear(i) ) leapYearCount++;
 		} // for i
 		System.out.println(leapYearCount); // 491
-		*/
 		
 		// [2] *** 기억
 		leapYearCount = 2025/4 - 2025/100 + 2025/400;
