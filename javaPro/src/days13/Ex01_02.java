@@ -1,11 +1,11 @@
-package days12;
+package days13;
 
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ex01 {
+public class Ex01_02 {
 	public static void main(String[] args) throws IOException {
 
 		/*
@@ -18,45 +18,39 @@ public class Ex01 {
 	    조건) 학생 이름,국,영,수 입력은 자동으로 처리하는 메서드를 만드세요.
 	    조건) 배열의 크기보다 학생 입력을 많이 할 경우 자동으로 배열의 크기를 3증가 시키는 코딩을 추가하세요.
 		 */
-		
+
 		// 문제 
 		// 3반 30명의 학생 이름 국어 영어 수학 입력받아서 해당 학생 총점 평균 등수 정보 출력
 
 		String name;
-		int kor,mat,eng, tot, rank;
+		int kor,mat,eng, tot, rank, wRank;
 		double avg;
 
-		final int STUDENT_COUNT = 10;
-		
-		String[] names = new String[STUDENT_COUNT];
-		
-		int[] kors = new int[STUDENT_COUNT];
-		int[] mats = new int[STUDENT_COUNT];
-		int[] engs = new int[STUDENT_COUNT];
-		int[] tots = new int[STUDENT_COUNT];
-		int[] ranks = new int[STUDENT_COUNT];
-		double[] avgs = new double[STUDENT_COUNT];
+		final int CLASS = 3;
+		final int STUDENT_COUNT = 30;
 
-		int cnt = 0; // 정보를 입력받은 학생 수
+
+		String[][] names = new String[3][STUDENT_COUNT];
+
+		double[][] avgs = new double[CLASS][STUDENT_COUNT];
+
+		int[][][] infos = new int[CLASS][STUDENT_COUNT][6];
+
+		//		int cnt1 = 0, cnt2 = 0, cnt3 = 0; // 정보를 입력받은 학생 수
+		int[] cnts = new int[3];
 		char con = 'y';
 
 		Scanner sc = new Scanner(System.in);
 
+		int ban;
 		do {
-			int len = names.length;
-			
-			if (names.length == cnt) {
-				names = Arrays.copyOf(names, len + 3);
-				kors = Arrays.copyOf(kors, len + 3);
-				engs = Arrays.copyOf(engs, len + 3);
-				mats = Arrays.copyOf(mats, len + 3);
-				tots = Arrays.copyOf(tots, len + 3);
-				ranks = Arrays.copyOf(ranks, len + 3);
-				avgs = Arrays.copyOf(avgs, len + 3);
-			}
-			
+
+			// 1. 입력하는 학생의 반 정보 입력
+			System.out.print("1. 반 입력 : ");
+			ban = sc.nextInt();
+
 			// 한 학생의 정보를 입력
-			System.out.printf("[%d] 학생 이름,국어,영어,수학 입력 : \n", cnt+1);
+			System.out.printf("%d반의 [%d번] 학생 이름,국어,영어,수학 입력 : \n", ban, cnts[ban-1]+1);
 			name = getName();
 			kor = getScore();
 			mat = getScore();
@@ -65,20 +59,26 @@ public class Ex01 {
 			tot = kor+mat+eng;
 			avg = (double) tot/3;
 			rank = 1;
+			wRank = 1;
 
-			System.out.printf("[%d] 이름 : %s, 국어 : %d, 영어 : %d, 수학 :%d, 총점 : %d, 평균 : %f\n", 
-					cnt+1, name, kor, mat, eng, tot, avg);
+			System.out.printf("%d반 [%d] 이름 : %s, 국어 : %d, 영어 : %d, 수학 :%d, 총점 : %d, 평균 : %f\n", 
+					ban, cnts[ban-1]+1, name, kor, mat, eng, tot, avg);
 
 			// 각 배열의 요소로 추가하는 배열
-			names[cnt] = name;
-			kors[cnt] = kor;
-			mats[cnt] = mat;
-			engs[cnt] = eng;
-			tots[cnt] = tot;
-			avgs[cnt] = avg;
+			names[ban-1][cnts[ban-1]] = name;
+
+			infos[ban-1][cnts[ban-1]][0] = kor;
+			infos[ban-1][cnts[ban-1]][1] = eng;
+			infos[ban-1][cnts[ban-1]][2] = mat;
+			infos[ban-1][cnts[ban-1]][3] = tot;
+			infos[ban-1][cnts[ban-1]][4] = rank;
+			infos[ban-1][cnts[ban-1]][5] = wRank;
+
+			avgs[ban-1][cnts[ban-1]] = avg;
+
 
 			// 입력받은 학생 수
-			cnt++;
+			cnts[ban-1]++;
 
 			// 입력여부진행 체크
 			System.out.println();
@@ -89,23 +89,37 @@ public class Ex01 {
 		} while (Character.toUpperCase(con) == 'Y');
 
 		// 등수 처리
-		for (int i = 0; i < cnt; i++) {
-			for (int j = 0; j < cnt; j++) {
-				if (tots[i] <tots[j]) {
-					ranks[i]++;
-				}
-			} // for j
-		} // for i
+		for (int i = 0; i < cnts.length; i++) {
+			for (int j = 0; j < cnts[i]; j++) {
+				infos[i][j][5]=infos[i][j][4] = 1;        
+				for (int k = 0; k < cnts.length; k++) {
+					for (int z = 0; z < cnts[k]; z++) {
 
+						//  tots[k][z] 비교할 학생의 총점
+						if(infos[i][j][3]<infos[k][z][3]) {
+							infos[i][j][5]++;
+							if (i == k) {
+								infos[i][j][4]++;
+							} // if
+
+						}
+					}
+				} 
+			} 
+		}
 
 		// 학생 정보 출력
-		System.out.printf("입력받은 학생 수는 %d명 입니다\n", cnt);
+		int totalCnt = cnts[0]+cnts[1]+cnts[2];
+		System.out.printf("전체 학생 수 : %d\n", totalCnt);
 
-		for (int i = 0; i < names.length; i++) {
-			System.out.printf("[%d]\t%s\t%d\t%d\t%d\t%d\t%.2f\t%d\n"
-					, i+1
-					, names[i], kors[i], engs[i], mats[i], 
-					tots[i], avgs[i], ranks[i]);
+		for (int i = 0; i < cnts.length; i++) {
+			System.out.printf("%d반의 입력받은 학생 수는 %d명 입니다\n", i+1, cnts[i]);
+			for (int j = 0; j < cnts[i]; j++) {
+				System.out.printf("\t[%d]\t%s\t%d\t%d\t%d\t%d\t%.2f\t%d\t%d\n"
+						, j+1
+						, names[i][j], infos[i][j][0], infos[i][j][1], infos[i][j][2], 
+						infos[i][j][3], avgs[i][j], infos[i][j][4], infos[i][j][5]);
+			} // for j
 		} // for i
 
 	} // main
