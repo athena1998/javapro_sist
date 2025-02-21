@@ -8,7 +8,6 @@
     <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="com.util.Graphic"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
@@ -26,7 +25,6 @@
     <fullyQualifiedTypeName name="java.util.function.IntSupplier"/>
     <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="com.util.MyCalendar"/>
     <fullyQualifiedTypeName name="com.util.Graphic2D"/>
     <fullyQualifiedTypeName name="java.time.LocalTime"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
@@ -37,4 +35,13 @@
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="com.util.MyCalendar"/>
+    <fullyQualifiedTypeName name="days14.Car"/>
+    <fullyQualifiedTypeName name="days14.Tv"/>
+    <fullyQualifiedTypeName name="days14.Point"/>
+    <fullyQualifiedTypeName name="days14.Person"/>
+    <fullyQualifiedTypeName name="days14.Time"/>
+    <fullyQualifiedTypeName name="days14.Students"/>
+    <fullyQualifiedTypeName name="days14.Student"/>
 </qualifiedTypeNameHistroy>

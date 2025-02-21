@@ -49,6 +49,9 @@ public class Ex02 {
 		 *		5) 문제점 파악 - 유지보수
 		 *		6) 상용화, 확장, 등등... 	
 		 *
+		 *		Person 		p1 =	 new Person();
+		 *		클래스		객체	 인스턴스
+		 *
 		 */
 		
 	} // main
