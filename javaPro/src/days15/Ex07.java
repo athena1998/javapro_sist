@@ -6,11 +6,9 @@ package days15;
  * @subject static 키워드
  * @content
  */
+
 public class Ex07 {
 	public static void main(String[] args) {
-
-
-
 
 		//		Save s1 = new Save("kim", 10000, 0.04);
 		//		Save s2 = new Save("lee", 11000, 0.04);
@@ -51,6 +49,13 @@ public class Ex07 {
 		for (Save save : sArr) {
 			save.printSave();
 		}
+		
+		// static 함수를 사용하면 메소드 함수도 이렇게 사용가능
+		//import static java.lang.Math.*;
+
+		//double x = 1.5;
+		//System.out.println(abs(0));
+
 
 
 	} // main

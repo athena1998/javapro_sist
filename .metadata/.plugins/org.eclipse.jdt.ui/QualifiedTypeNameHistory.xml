@@ -9,7 +9,6 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="com.util.Graphic"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.util.Spliterator"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
@@ -29,7 +28,6 @@
     <fullyQualifiedTypeName name="java.time.LocalTime"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.stream.Collector"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
@@ -44,4 +42,12 @@
     <fullyQualifiedTypeName name="days14.Time"/>
     <fullyQualifiedTypeName name="days14.Students"/>
     <fullyQualifiedTypeName name="days14.Student"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="days15.Person"/>
+    <fullyQualifiedTypeName name="days15.Button"/>
+    <fullyQualifiedTypeName name="days15.Calc"/>
+    <fullyQualifiedTypeName name="days15.MyPoint"/>
+    <fullyQualifiedTypeName name="days15.Save"/>
 </qualifiedTypeNameHistroy>
