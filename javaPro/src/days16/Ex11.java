@@ -40,7 +40,6 @@ public class Ex11 {
 		
 		// 자식객체 reqular의 dispEmpInfo 호출
 		emp2.dispEmpInfo();
-		emp2.getPay
 		
 		
 		

@@ -15,7 +15,7 @@ public class Regular extends Employee {
 	}
 	
 	public Regular() {
-		System.out.println("기본 생성자 호출"); 
+		System.out.println("Regular 기본 생성자 호출"); 
 	}
 
 

@@ -2,7 +2,9 @@ package days16;
 
 
 // 사원이라면 공통적으로 가지고 있는 멤버들을 선언한 클래스
-public class Employee {
+// 추상 클래스 : 객체를 생성할 수 없는 (불완전) 클래스 new Employee() 불가
+// 미완성된 == abstruct
+public abstract class Employee {
 	
 	private String name;
 	private String addr;
@@ -11,7 +13,7 @@ public class Employee {
 	
 	
 	public Employee() {
-		System.out.println("기본 생성자 호출");
+		System.out.println("Employee 기본 생성자 호출");
 	}
 
 
@@ -24,9 +26,16 @@ public class Employee {
 	}
 	
 	public void dispEmpInfo() {
-		System.out.printf("사원명 : %s, 주소 : %s, 연락처 : %s, 입사일자 : %s", 
+		System.out.printf("사원명 : %s, 주소 : %s, 연락처 : %s, 입사일자 : %s\n", 
 				this.name, this.addr, this.tel, this.hiredate);
 	}
+	
+	// 가상 메소드 - 오버라이드 할때 틀만 되는 메소드
+	// 몸체가 업슨 함수 원형 (prototype)만 있는 메소드
+	// This method requires a body instead of a semicolon
+	// 불완전한 메소드 : 추상메소드
+	// The abstract method getPay in type Employee can only be defined by an abstract class
+	public abstract int getPay();
 
 
 	public String getName() {

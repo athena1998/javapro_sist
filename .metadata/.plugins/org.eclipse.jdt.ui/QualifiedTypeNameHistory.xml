@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Byte"/>
-    <fullyQualifiedTypeName name="javax.sound.midi.SysexMessage"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
     <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="com.util.Graphic"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.util.Spliterator"/>
@@ -31,8 +27,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.stream.Collector"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="com.util.MyCalendar"/>
     <fullyQualifiedTypeName name="days14.Car"/>
@@ -50,4 +44,20 @@
     <fullyQualifiedTypeName name="days15.Calc"/>
     <fullyQualifiedTypeName name="days15.MyPoint"/>
     <fullyQualifiedTypeName name="days15.Save"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="days16.Member"/>
+    <fullyQualifiedTypeName name="days16.Document"/>
+    <fullyQualifiedTypeName name="days16.Car"/>
+    <fullyQualifiedTypeName name="days16.Engine"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="days16.Circle"/>
+    <fullyQualifiedTypeName name="days16.Shape"/>
+    <fullyQualifiedTypeName name="java.awt.Point"/>
+    <fullyQualifiedTypeName name="days16.Point2D"/>
+    <fullyQualifiedTypeName name="days16.Triangle"/>
+    <fullyQualifiedTypeName name="days16.Child"/>
+    <fullyQualifiedTypeName name="days16.Regular"/>
+    <fullyQualifiedTypeName name="days16.Employee"/>
 </qualifiedTypeNameHistroy>
