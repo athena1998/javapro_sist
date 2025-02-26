@@ -55,7 +55,7 @@ interface Attackable{
 	void attack(Unit unit);
 }
 
-//인터페이스 끼리 상속이 가능하고 키워드는 extends 사용한다. 
+//인터페이스끼리 상속이 가능하고 키워드는 extends 사용한다. 
 //인터페이스는 다중상속이 가능하다. 
 interface Fightable extends Movable, Attackable {
 

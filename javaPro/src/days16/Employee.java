@@ -31,7 +31,7 @@ public abstract class Employee {
 	}
 	
 	// 가상 메소드 - 오버라이드 할때 틀만 되는 메소드
-	// 몸체가 업슨 함수 원형 (prototype)만 있는 메소드
+	// 몸체가 없는 함수 원형 (prototype)만 있는 메소드
 	// This method requires a body instead of a semicolon
 	// 불완전한 메소드 : 추상메소드
 	// The abstract method getPay in type Employee can only be defined by an abstract class

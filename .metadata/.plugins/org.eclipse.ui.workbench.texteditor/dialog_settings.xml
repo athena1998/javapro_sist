@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="복사"/>
+		<item key="selection" value="abst"/>
 		<list key="findhistory">
+			<item value="abst"/>
+			<item value="ab"/>
 			<item value="복사"/>
 			<item value="btnExec"/>
 			<item value="CLASS"/>

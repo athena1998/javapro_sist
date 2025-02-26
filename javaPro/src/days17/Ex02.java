@@ -15,6 +15,7 @@ public class Ex02 {
 		// (변환하고자 하는 자료형) cast 연산자로 강제 형변환
 		// 반드시 자식객체로 업케스팅을 한 객체만이 다운캐스팅을 할 수 있다.
 		Regular emp2 = (Regular) emp1;
+		emp2.getPay();
 		
 	} // main
 

@@ -14,4 +14,12 @@ public class Student {
 				, kor, eng, mat, tot
 				, avg, rank, wRank); 
 	}
+
+	@Override
+	public String toString() {
+		return String.format("%s\t%d\t%d\t%d\t%d\t%.2f\t%d\t%d\n"
+				, name, kor, eng, mat, tot, avg, rank, wRank);
+		
+
+	}
 }

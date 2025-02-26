@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-public class Ex12 {
+public class Ex11 {
 	public static void main(String[] args) throws IOException {
 
 		/*
@@ -117,10 +117,8 @@ public class Ex12 {
 		for (int i = 0; i < cnts.length; i++) {
 			System.out.printf("%d반의 입력받은 학생 수는 %d명 입니다\n", i+1, cnts[i]);
 			for (int j = 0; j < cnts[i]; j++) {
-				System.out.printf("[%d]\t%s\t%d\t%d\t%d\t%d\t%.2f\t%d\t%d\n"
-						, j+1
-						, studentsArr[i][j].name, studentsArr[i][j].kor, studentsArr[i][j].eng, studentsArr[i][j].mat, 
-						studentsArr[i][j].tot, studentsArr[i][j].avg, studentsArr[i][j].rank, studentsArr[i][j].wRank);
+				// Student 객체에 toString() 메소드 오버라이드
+				System.out.printf("[%d]\t%s", (j+1), studentsArr[i][j].toString());
 			} // for j
 		} // for i
 

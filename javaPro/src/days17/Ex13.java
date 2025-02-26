@@ -1,7 +1,5 @@
 package days17;
 
-import java.util.Arrays;
-
 /**
  * @author junginn
  * @date : 2025. 2. 25. - 오후 4:09:26

@@ -17,7 +17,7 @@ public class Car {
 		
 	}
 	
-	Car(Engine engine) { // 매개변수 다형성
+	public Car(Engine engine) { // 매개변수 다형성
 		this.engine = engine;
 	}
 	
@@ -33,15 +33,11 @@ public class Car {
 		this.engine.moreFuel(fuel);
 	}
 	
-	void speedDown(int fuel) {
+	public void speedDown(int fuel) {
 		this.engine.lessFuel(fuel);
 	}
 	
-	void stop() {
+	public void stop() {
 		this.engine.stop();
 	}
-	
-	
-	
-
 }
