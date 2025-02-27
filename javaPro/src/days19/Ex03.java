@@ -1,4 +1,4 @@
-package Ex19;
+package days19;
 
 /**
  * @author junginn
@@ -17,7 +17,7 @@ public class Ex03 {
 		// String fullName = cls.getName();
 		// System.out.println(fullName);
 
-		// [2] - 모든 클래스 static 필드 : class
+		// [2] 모든 클래스 static 필드 : class
 		// cls 를 이용해서 실제 Card 객체(인스턴스) 생성
 		//							 	new Card();
 		//  Class cls = Card.class;

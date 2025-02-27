@@ -1,4 +1,4 @@
-package Ex19;
+package days19;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

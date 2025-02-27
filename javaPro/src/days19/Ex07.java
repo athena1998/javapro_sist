@@ -1,4 +1,4 @@
-package Ex19;
+package days19;
 
 public class Ex07 {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Ex19;
+package days19;
 
 public class Ex02 {
 	public static void main(String[] args) {
@@ -63,6 +63,7 @@ class Point extends Object implements Cloneable{
 //	}
 	
 	// 공변 반환 타입
+	// 상속 관계에서 메서드를 오버라이딩할 때 반환 타입을 부모 클래스의 타입에서 자식 클래스의 타입으로 확장할 수 있는 기능
 	// 오버라이딩 주의할점 - 부모의 리턴자료형, 매개변수, 예외 등등
 	// 부모 리턴자로 형변환 -> 자식 리턴 자료형으로 변경
 	@Override

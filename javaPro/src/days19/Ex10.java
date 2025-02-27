@@ -1,4 +1,4 @@
-package Ex19;
+package days19;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -22,10 +22,12 @@ public class Ex10 {
 		try(FileReader reader = new FileReader(fileName);) {
 			while ((code = reader.read()) != -1) {
 				code = Character.toUpperCase(code);
+				
+				// code가 대문자로 변경할 수 없는 문자일 경우 (예: 숫자, 특수문자([ ],{ }) 등) index 계산이 잘못될 수 있다.
 				if (Character.isUpperCase(code)) {
 					int index = code - 'A';
-					// countArr[index]++;
-					countArr[index] = countArr[index] +1;
+					countArr[index]++;
+					// countArr[index] = countArr[index] +1;
 				} // if
 			} // while
 			

@@ -1,4 +1,4 @@
-package Ex19;
+package days19;
 
 import static java.lang.Math.*;
 public class Ex06 {
