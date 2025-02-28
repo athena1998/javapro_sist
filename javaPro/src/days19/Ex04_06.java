@@ -7,8 +7,8 @@ import java.io.FileWriter;
 public class Ex04_06 {
 	public static void main(String[] args) {
 
-		String fileName = ".\\src\\Ex19\\학생명단.txt";
-		String saveFileName = ".\\src\\Ex19\\sistClass5.html";
+		String fileName = ".\\src\\days19\\학생명단.txt";
+		String saveFileName = ".\\src\\days19\\sistClass5.html";
 		String name = null;
 		
 		try(FileReader reader = new FileReader(fileName);

@@ -26,6 +26,8 @@ public class Ex10 {
 				// code가 대문자로 변경할 수 없는 문자일 경우 (예: 숫자, 특수문자([ ],{ }) 등) index 계산이 잘못될 수 있다.
 				if (Character.isUpperCase(code)) {
 					int index = code - 'A';
+					System.out.println(index);
+					
 					countArr[index]++;
 					// countArr[index] = countArr[index] +1;
 				} // if
