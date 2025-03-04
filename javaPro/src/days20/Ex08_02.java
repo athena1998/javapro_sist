@@ -31,6 +31,10 @@ public class Ex08_02 {
 	
 	public static boolean isToday(Calendar c) {
 	      Calendar today = Calendar.getInstance(); // 절삭  
+	      // get(1) : 연도
+	      // get(2) : 월
+	      // get(5) : 일
+	      // 1,2,5 셋 다 상수값이므로 변경되지않음
 	      today =  new GregorianCalendar(today.get(1), today.get(2), today.get(5));
 //	      System.out.print(c.get(Calendar.DATE) + " " + today.get(Calendar.DATE) + " " +today.equals(c) + "\t");
 	      return today.equals(c);
