@@ -57,14 +57,20 @@ public class Ex01 {
 		
 	}
 		
-	ArrayList<Object> personList = new ArrayList<Object>();
-	personList.add(new Person("lee", 20));
-	personList.add(new Person("kim", 25));
+	ArrayList personList = new ArrayList();
+	personList.add(new Person("bbb", 20));
+	personList.add(new Person("aaa", 25));
 	
-	personList.sort(null);
-
+	personList.sort( new Comparator<Person>() {
+		@Override
+		public int compare(Person o1, Person o2) {				
+			return o1.name.compareTo( o2.name );
+			// return o1.age -  o2.age;
+		}
+	} );
 	
 	System.out.println(personList);
+	
 		
 	} // main
 }
@@ -86,14 +92,12 @@ class Person implements Comparable<Person> {
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
+		return "Person [name=" + name + ", age=" + age + "]";
 	}
 
 	@Override
 	public int compareTo(Person o) {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.name.compareTo(o.name);
 	}
 	
 	
