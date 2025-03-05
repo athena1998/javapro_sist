@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="getCalendar"/>
+		<item key="selection" value="trim"/>
 		<list key="findhistory">
+			<item value="trim"/>
 			<item value="getCalendar"/>
 			<item value="Student"/>
 			<item value="abst"/>
@@ -22,7 +23,6 @@
 			<item value="randomArr"/>
 			<item value="m"/>
 			<item value="message"/>
-			<item value="name"/>
 		</list>
 		<list key="replacehistory">
 			<item value="arr"/>
