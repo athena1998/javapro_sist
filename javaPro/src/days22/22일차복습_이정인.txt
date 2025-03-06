@@ -1,0 +1,113 @@
+1. 지금까지 배운 컬렉션 클래스 종류와 특징에 대해서 설명하세요.
+	- ArrayList : 순차적으로 데이터를 입력할때 List 중에 가장 빠르다
+	- LinkedList : 중간에 데이터를 삽입/삭제/수정할때 빠르다
+	- HashSet : Set 인터페이스에 속하는 Set 클래스 중 하나 순서 보장이 되지 않고
+				중복입력 또한 불가능하다
+	- LinkedHashSet : Set 인터페이스에 속하는 Set 클래스 중 하나 HashSet과 달리
+						순서 보장이 가능하며 중복입력은 HashSet과 동일하게 불가능하다
+
+2. Stack과 Queue에 대해서 설명하세요.
+	Stack은 후입 선출 구조를 가잔 자료구조이며
+	Queue는 선입 선출 구조를 가진 자료 구조이다.
+	Stack은 주로 연산에 사용되며
+	Queue는 히스토리같은 데이터 조회에 용이하다
+ 
+2-2. Stack에 사용되는 메서드를 적으세요. 
+  ㄱ. 요소 추가 메서드 :  push(), add()
+  ㄴ. 마지막 요소 얻어오는 메서드 + 제거O : lastElement() + remove()
+  ㄷ. 마지막 요소 얻어오는 메서드 + 제거X : lastElement()
+  ㄹ. 요소가 비었는 지 체크하는 메서드 : isEmpty
+  
+2-3. Queue에 사용되는 메소드를 적으세요.
+  ㄱ. 요소 추가 메서드 :  offer(), add()
+  ㄴ. 마지막 요소 얻어오는 메서드 + 제거O :	remove()
+  ㄷ. 마지막 요소 얻어오는 메서드 + 제거X : q.element(), q.peek()
+  ㄹ. 요소가 비었는 지 체크하는 메서드 : isEmpty()
+
+3. Deque( Double-Ended Queue ) 에 대해서 특징을 설명하세요.
+	- 일반적인 큐는 한쪽으로만 가능한데 Deque는 양쪽으로 가능한 큐
+	
+4. 열거자와 반복자에 대해서 설명하세요 .
+
+5. 게임횟수를 입력받아서 로또번호를 출력하는 코딩을 하세요. 
+  ( 조건 : ArrayList 와 LinkedHashSet 컬렉션 클래스 사용 )
+  ( 조건 : main 메서드 안에 모든 코딩을 하세요. )
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("게임 횟수 입력 : ");
+		int turn = sc.nextInt();
+		
+		for(int i=1; i<=turn; i++) {
+			System.out.printf("[%d번째] ", i);
+			Random rnd = new Random();
+			
+			HashSet<Integer> set = new HashSet<Integer>(6);
+			while (set.size() < 6) {
+				set.add(rnd.nextInt(45)+1);
+			} // while
+	
+			ArrayList<Integer> list = new ArrayList<Integer>(set);
+			Collections.sort(list);
+			
+			Iterator<Integer> it = list.iterator();
+			while (it.hasNext()) {
+				int num = (int) it.next();
+				System.out.printf("[%02d]", num);
+			}
+			System.out.println();
+		}
+	} // main
+
+6. "1차_조편성.txt" 파일을 읽어와서 
+  컬렉션 클래스를 사용하여 
+  아래와 같이 출력하는 코딩을 하세요.  
+  (조건) 각 조원들을 컬렉션 클래스에 저장해서 출력하기.
+  
+  출력형식)
+[1조]
+	A. 권태정
+	B. 김도훈
+	C. 김민선
+	D. 김승효
+
+[2조]
+	A. 김유미
+	B. 김현수
+	C. 박지웅
+	D. 변상호
+	E. 서재웅
+
+[3조]
+	A. 서주원
+	B. 안우혁
+	C. 안준호
+	D. 양재원
+	E. 이정인
+
+[4조]
+	A. 이진욱
+	B. 최승호
+	C. 최인석
+	D. 김예지
+
+		String fileName = ".\\src\\days23\\1차_조편성.txt";
+		try(FileReader reader = new FileReader(fileName);
+				BufferedReader br = new BufferedReader(reader);) {
+			String str;
+			while ((str = br.readLine()) != null) {
+				char ch = 'A';
+				String[] split = str.split("[/|:]");
+				System.out.printf("[%s]\n", split[0]);
+				for (int i = 1; i < split.length; i++) {
+					System.out.printf("\t%c. %s\n", ch++, split[i]);
+				} // for i
+				System.out.println();
+			} // while
+
+		} catch (FileNotFoundException e) {
+			System.out.println(e.toString());
+		} catch (IOException e1) {
+			System.out.println(e.toString());
+		}
