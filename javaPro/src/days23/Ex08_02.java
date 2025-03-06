@@ -40,8 +40,9 @@ public class Ex08_02 {
 				// if (  [A-Za-z0-9]  ) {
 				if (  Character.isUpperCase(code) || Character.isLowerCase(code) || Character.isDigit(code)   ) {					
 					one = (char) code;  // key 존재 유무 확인
-					int oldValue = hm.get(one);
-					hm.put(one, oldValue+1 );
+//					int oldValue = hm.get(one);
+//					hm.put(one, oldValue+1 );
+					hm.put(one, hm.getOrDefault(one, 0)+1);
 				} // if // if
 			} // while
 
