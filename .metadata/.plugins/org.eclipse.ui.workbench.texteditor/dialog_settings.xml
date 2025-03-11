@@ -6,8 +6,9 @@
 		<item key="wholeword" value="true"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="addPhoneNo"/>
+		<item key="selection" value="stop"/>
 		<list key="findhistory">
+			<item value="일시정지"/>
 			<item value="addPhoneNo"/>
 			<item value="trim"/>
 			<item value="getCalendar"/>
@@ -22,9 +23,9 @@
 			<item value="local"/>
 			<item value="limit"/>
 			<item value="randomArr"/>
-			<item value="m"/>
 		</list>
 		<list key="replacehistory">
+			<item value="stop"/>
 			<item value="arr"/>
 			<item value="m"/>
 			<item value="name"/>

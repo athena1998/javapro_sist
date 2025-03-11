@@ -1,0 +1,53 @@
+1. 익명 클래스에 대해서 설명하세요 .
+    - 일회용 클래스. 기존의 객체는 객체를 생성할때마다 호출하기 때문에 별도의 클래스를 만들어 재사용이 가능하게 하지만
+정말 딱 한번 호출되고 더이상 사용하지 않을 객체의 경우에는 익명클래스로 오버라이딩하여 작성한다,
+2. 오류 (에러) 종류 및 설명하세요.
+    - 에러 : 수습, 수정, 처리할 수 없는 심각한 오류. 오류의 원인이 개발자가 아니라 컴퓨터 자체 (메모리 문제 등등)에 문제가 있어 수습이
+              불기능한 오류를 말한다.
+    - 오류 : 수습 수정이 가능한 오류. 오류의 원인이 개발자에게 있어 수습과 수정이 가능해 해결할 수 있는 오류를 말한다.
+
+3. 예외처리 2가지방법에 대해 설명하세요.
+    - try-catch 문 : try { } catch { } 형식으로 사용하며 오류가 날 가능성이 있는 코드를 try문에 작성하고 해당 오류가 발생했을 경우의
+			대처방안을 catch 문에 작성하여 Exception Handling 을 할 수 있다.
+    - throws 문 : "던진다" 라는 의미가 있어 오류가 나면 오류를 처리하지 않고 상위 클래스로 보내버린다. 
+4. 다중 catch문, 멀티 catch 문에 대해서 설명하세요.
+    - 하나의 코드에서 반드시 하나의 오류가 난다는 보장이 없고 오류의 종류는 굉장히 다양해 두개 이상의 catch 문을 사용하는것을
+	멀티 catch 라고 한다
+	- 다중 catch :  catch 문이 여러개
+	- 멀티 catch : cathc 문 하나에서 or 연산자로 다중 오류 처리
+5. checked 예외, unchecked 예외에 대해서 설명하세요.
+    - checked 예외는 주로 Exception e 를 부모 클래스로 두고 그 하위의 오류들이며 컴파일러가 코드에서 해당 오류를 발견했을때 
+	체크할 수 있다.
+    - unckecked 예외는 RuntimeException e 를 부모로 두고 그 하위의 오류들이며 컴파일러가 코드에서 오류가 발생할 가능성이 있어도
+	 체크하지 않는다.
+6. 학생명단.txt  파일을 읽어서 출력.
+  ( 
+   ㄱ. try~with~resources 문 사용
+   ㄴ. FileReader 만 사용 ( BufferedReader X )
+   ㄷ.  앞에 LineNumber 붙이기 
+  )
+
+	public static void main(String[] args) {
+		
+		String file = System.getProperty("user.dir") +  "\\src\\days18\\학생명단.txt";
+		
+		try (FileReader reader = new FileReader(file);) {
+			int one;
+			int lineNumber = 1;
+			System.out.printf("[%d] ", lineNumber++);
+			while ((one = reader.read()) != -1) {
+				System.out.print((char) one);
+				
+				if(one == 10) {
+					System.out.printf("[%d] ", lineNumber++);
+				}
+			} // while
+		} catch (FileNotFoundException e) {
+			System.out.println(e.toString());
+			e.printStackTrace();
+		} catch (IOException e) {
+			System.out.println(e.toString());
+			e.printStackTrace();
+		}
+	} // main
+	

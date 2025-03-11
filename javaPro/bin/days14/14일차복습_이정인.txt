@@ -1,0 +1,216 @@
+1. 용어 정리
+  1) 객체 지향적 프로그래밍( OOP ) - 각각의 역할을 가지고있는 객체들을 조립하여 구현하는 프로그래밍 기법
+  2) 객체  - 클래스를 통해 생성한 실체가 있는것      
+  3) 클래스   - 객체를 생성하기 위한 틀 클래스 자체로는 어떠한 기능을 수행하지 않으나 객체를 생성하기 위한 설계도의 역할을 한다
+  4) 인스턴스 -   객체를 실체화한 구체적인 실체
+  				  클래스 타입으로 선언되었을때 객체라고 부르고,
+  				  그 객체에 값이 할당되어 실제 사용할 수 있게 되었을때 인스턴스라고 부른다.
+  5) 인스턴스화 - 객체에 값을 할당하기 위해 해당 객체를 초기화한것 Car c1 = [new Car();] <- 이부분이 인스턴스화를 하는 부분
+  6) 객체의 구성요소 - 필드(속성) 메서드 (기능)
+  7) 멤버 - 객체에서 사용하고자하는 속성 사람을 예시로 하면 이름은 뭐고 키는 몇이고 나이는 몇살이고 하는 등등의 각각의 사람에서 부여되는 속성값과 해당 객체에서 수행하는 기능을 가진 메소드를 통틀어서 멤버라고 부른다.
+  8) 멤버변수 - 객체에서 사용하는 속성을 변수화 한것 ex) String name, int age, int height
+  9) 멤버함수 - 객체 안에서 사용하는 [기능]을 가진 함수, 메소드라고 부른다
+  10) 필드 - 객체에서 사용하고자하는 속성. 사람을 예시로 하면 이름은 뭐고 키는 몇이고 나이는 몇살이고 하는 등등의 각각의 사람에서 부여되는 속성값을 필드라고 부른다 
+  11) 메서드 - 객체 안에서 사용하는 [기능]을 가진 함수 메소드라고 부른다
+  12) 변수 - 메소드에서 값을 할당하기 위해 생성하는 것
+      상수 - 클래스에서 사용하는 고정 값 
+      리터럴 - 3.14 처럼 공식적으로 지정되어 변하지 않는 값          
+  13) 참조변수 - 기본형이 아닌 참조형 데이터 타입을 가지고 있는 변수를 말한다
+	class. interface, array 등이 있다.
+  
+2. 클래스의 특징( OOP의 특징 )에 대해서 설명하세요.
+  - 캡슐화 : 객체에서 공개할 수 있는 부분만 공개하고 변수값이나 메소드등 외부에 노출하면 안되는 부분을 숨기는 것
+       은닉화 (정보 은닉)
+  - 상속 : 자식 객체에서 부모객체의 속성과 기능을 사용할 수 있는 것
+  - 추상화 : 객체에서 공통적인 기능과 속성을 모아서 정의하는것
+  - 다형성 : 객체의 상황에 따라 각각 다른 결과값이 나올수 있게 하는것 
+
+3. 클래스의 설계 과정에 대해서 설명하세요. 
+    객체의 구성요소 파악 및 정리
+    객체 모델링
+    클래스 선언 - 접근제어자 기타제어자 클래스 클래스 명 입력
+    객체 생성 - 필드 선언, 메소드 선언
+    테스트 및 유지보스
+    상용화 / 확장
+
+4. NullPointerException 예외(에러)는 언제 발생하는 가 ? 
+     - 객체가 생성되지 않았는데 호출될때
+     - 인스턴스 화 되지 않았을때
+
+5. 클래스의 선언 형식
+     - (접근제어자 - 제어자에 따라 생략가능) (기타제어자 - 생략가능) 클래스 클래스 명 { }
+
+6.   클래스 앞의 접근지정자의 종류에 대해서 설명하세요.   
+     - public - 패키지 상관없이 어디서나 접근 가능
+     - default(package) - 같은 패키지 안에서만 접근 가능
+     - protected - 같은 패키지 안에서만 접근 가능하나 외부패키지에서도 상속을 받았으면 접근 가능
+     - private - 같은 파일 안에서만 접근 가능
+
+6-2. 멤버 앞의 접근지정자의 종류에 대해서 설명하세요.
+     - public - 패키지 상관없이 어디서나 접근 가능
+     - default(package) - 같은 패키지 안에서만 접근 가능
+     - protected - 같은 패키지 안에서만 접근 가능하나 외부패키지에서도 상속을 받았으면 접근 가능
+     - private - 같은 메소드 안에서만 접근 가능
+   
+7. 클래스 선언할 때 기타제어자 종류에 대해서 설명하세요.
+	static final abstract
+  
+8. 클래스(객체) 복사 / 클래스(객체) 복제에 대해서 설명하세요.  
+ 	클래스 복제는 보통 클론(복제) 이라는 개념을 통해 객체를 완전하게 복사하는 것을 의미
+ 	클래스 복사는 일반적으로 객체를 복사하는 것을 의미. 즉, 이미 존재하는 객체를 동일한 값으로 복사해 새로운 객체를 생성하는 과정
+ 	얇은 복사와 깊은 복사로 복사의 정도를 설정할 수 있다.
+ 	얕은 복사는 기본 타입 값만 복사하고 참조 타입 필드는 원본 객체와 복사된 객체가 같은 참조를 공유
+ 	깊은 복사는 객체 내부에 포함된 다른 객체들도 새로운 객체로 복사하여, 원본 객체와 복사된 객체가 완전히 독립적 (다른이름으로 저장하기)
+
+9. 클래스(객체) 배열 에 대해서 설명하세요.  
+	객체를 배열로 선언하는 것
+	객체에 할당하는 값이 여러개이고 필드도 여러개일때 
+	Car c1 = new Car(); 
+	c1.name = "홍길동";
+	Car c2 = new Car(); 
+	c2.name = "홍길동";
+	Car c3 = new Car(); 
+	c3.name = "홍길동";
+	... 
+	하면 코드의 길이도 너무 길고 데이터의 추가적인 수정이 어려워 배열로 생성후 각각의 필드값에 데이터를 입력하면
+	코드의 가독성도 훨씬 올라가고 유지보수하기 간편하다.
+	그러나 객체배열에 데이터를 넣는 과정은 객체를 인스턴스화 하는것이 아닌 단순 배열 입력이기 때문에 해당 객체 값을 출력하려면 
+	객체를 인스턴스 화 하는 과정이 추가로 필요하다.
+
+	// Student 객체 생성
+	Student stu = new Student();
+	Student[] studentsArr = new Student[5];
+	
+	//  데이터 개수만큼 for문이나 while 문을 돌린다.
+	stu.name = name;
+	stu.kor = kor;
+	studentsArr[0] = stu; 
+
+10.  선언되는 위치를 기준으로 변수 구분하고, 생성시기, 소멸시기에 대해서 설명하세요. 
+       지역변수 : 메소드 안 - 메소드 밖으로 나가면 소멸됨 (더이상 사용하지 않음)
+       클래스 변수 : 클래스 안 (보통  static이 붙어있다) - 클래스가 종료될때 소멸된다.
+       인스턴스 변수 : 클래스 안 - 더 이상 참조하지 않을때 소멸된다
+
+11. 3 반의 30명의 학생의 성적 관리
+    Student 클래스를 선언 후 
+    클래스 배열을 사용해서 처리하세요
+    ( 입력, 성적 처리, 출력 )       
+
+class Student {
+
+	int no;
+	String name;
+	int kor, eng, mat, tot, rank;
+	double avg;
+
+	public String getInfo() {
+		return String.format("[%d]\t%s\t%d\t%d\t%d\t%d\t%.2f\t%d\n"
+				, no
+				, name
+				, kor, eng, mat, tot
+				, avg, rank); 
+	}
+}
+
+public class Ex12 {
+
+	public static void main(String[] args) throws IOException {
+		String name;
+		int kor, eng, mat, tot, rank;
+		double avg;
+		
+		final int STUDENT_COUNT = 30;
+		
+		Student[] studentsArr = new Student[STUDENT_COUNT];
+		
+		int cnt = 0; // 입력받은 학생 수
+		char con = 'y';
+
+		Scanner scanner = new Scanner(System.in);
+		
+		do {
+			// 한 학생의 정보를 입력
+			System.out.printf("[%d번] 학생 이름,국어,영어,수학 입력 ? ", cnt+1);
+			name = getName(); // scanner.next();
+			kor = getScore(); // scanner.nextInt();
+			eng = getScore(); // scanner.nextInt();
+			mat = getScore(); // scanner.nextInt();
+			
+			tot = kor + eng + mat;
+			avg = (double)tot/3;
+			rank = 1;
+			
+			// Student 객체 생성
+			Student stu = new Student();
+			
+			// 객체의 필드값에 각각의 데이터 입력
+			stu.no = cnt+1;
+			stu.name = name;
+			stu.kor = kor;
+			stu.eng = eng;
+			stu.mat = mat;
+			stu.tot = tot;
+			stu.avg = avg;
+			stu.rank = rank;
+			
+			// studentsArr 에 stu 입력한 정보 입력
+			studentsArr[cnt] = stu;
+			
+			// 입력받은 학생수 1증가
+			cnt++;
+			
+			// 입력 계속 여부 체크
+			System.out.print("> 학생 입력 계속 ? ");
+			con = (char)System.in.read();
+			System.in.skip(System.in.available()); // 13, 10
+		} while ( Character.toUpperCase(con) == 'Y' );
+		
+		// 등수처리.
+		for (int i = 0; i < cnt; i++) {
+			for (int j = 0; j < cnt; j++) {
+				if (studentsArr[i].tot < studentsArr[j].tot ) {
+					studentsArr[i].rank++;
+				} // if
+			} // for j
+		} // for i
+		
+		// 학생정보출력.
+		System.out.printf("> 입력받은 학생수 : %d명\n", cnt);
+		for (int i = 0; i < cnt; i++) {
+			System.out.print(studentsArr[i].getInfo());
+		} // for i
+		
+	} // main
+	
+	public static String getName() {
+		// '가' ~ '힣'
+		// 44032 ~ 55203
+		
+		// 5 ~ 13
+		// 0 ~ 8                -5
+		// 5 <=  (int)(Math.random()*9)+5 <= 13
+		
+		 
+		//char one = (char)(rnd.nextInt('힣'-'가'+1)+'가');
+		
+		char [] nameArr = new char[3];
+		Random rnd = new Random();
+		for (int i = 0; i < nameArr.length; i++) {
+			nameArr[i] = (char)(rnd.nextInt('힣'-'가'+1)+'가');
+		}
+		
+		// char[] -> String 변환
+		String name = new String(nameArr);
+		return name;
+	}
+
+	public static int getScore() {
+		return  (int)( Math.random()*101 ) ;
+	}
+
+} // class
+
+
+
+
+

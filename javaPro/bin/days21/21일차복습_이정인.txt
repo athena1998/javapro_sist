@@ -1,0 +1,115 @@
+1.   현재 날짜와 시간 정보를   LocalDateTime 클래스를 사용해서 
+     아래와 같은 형식으로 출력하세요 .     
+     출력 형식 ) 2023/02/28 화요일   12:17:57.356  
+	
+	LocalDateTime loc = LocalDateTime.now();
+	String pattern = "yyyy/MM/dd E요일 HH:mm:ss.SSS";
+	DateTimeFormatter dtf = DateTimeFormatter.ofPattern(pattern);
+	System.out.println(loc.format(dtf));
+	
+2.  String s = "2023.02.28 (화)" 문자열을 LocalDate 클래스로 변환시키세요. 
+	
+	String str = "2023.02.28 (화)";
+	String pattern2 = "yyyy.MM.dd (E)";
+	DateTimeFormatter dtf = DateTimeFormatter.ofPattern(pattern2);
+	LocalDate lod = LocalDate.parse(str, dtf);
+	System.out.println(lod);
+	
+3. 용어 정리
+  1) 프레임워크( framework ) 정의에 대해서 설명하세요. 
+  	   -  프로그램을 개발하기 위해 필요한 틀을 제공하는 프로그램	
+  2) 컬렉션 프레임워크 정의에 대해서 설명하세요. 
+  	   -  다수의 데이터를 쉽고 효율적으로 처리하기 위해 만든 클래스들의 집합
+  
+  3) 컬렉션 프레임워크의 핵심 인터페이스( 3가지 타입 ) 에 대해서 설명하세요.  
+       - List : 순서 유지 가능 하고 데이터의 중복을 허용하는 인터페이스
+       - Set  : 순서 유지가 불기능 하며 중복 입력 또한 불가능한 인터페이스
+       - Map  : 키값(key-value) 쌍으로 데이터를 저장하며 순서를 보장하지 않고
+       			key 값은 중복이 불가능하나 value 값은 중복이 허용된다.
+
+4. ArrayList 컬렉션 클래스를 사용하여 
+  1) 팀원들 이름을 요소로 추가하기
+     (팀원들은 같은 옆 자리의 교육생) 
+	
+	ArrayList<String> teams = new ArrayList<String>();
+	teams.add("kim");
+	teams.add("lee");
+	teams.add("park");
+     
+  2) 반복자(iteratror)를 사용해서 모든 요소 출력하기      ***
+  	
+	Iterator<String> it = teams.iterator();
+	
+	while (it.hasNext()) {
+		String member = it.next();
+		System.out.println(member);
+	}
+		
+  
+  3) 팀원 한명을 검색해서 있다면 "홍길동"으로 수정하기
+  	
+	if (teams.indexOf("kim") != -1) {
+		teams.set(teams.indexOf("kim"), "홍길동");
+	} // if
+	
+  4) "홍길동"을 검색해서 있다면 삭제하기. 
+  	
+	if (teams.indexOf("홍길동") != -1) {
+		teams.remove("홍길동");
+	} // if
+    
+5.  java.time 패키지 클래스 사용. ( LocalDateTime 사용)
+    1) 설문 시작일 25.1.15  09:00:00
+    2) 설문 종료일 25.3.05  09:00:00
+   오늘 현재 설문 가능한여부를 출력하세요. 
+  	
+	LocalDateTime end = LocalDateTime.of(2025, 03, 05, 9, 0);
+	LocalDateTime today = LocalDateTime.now(); // 2025-03-05 09:29
+	
+	boolean isResearch = today.isBefore(end) ? true : false;
+	
+	System.out.println(isResearch); // false
+	
+  
+6. 이름, 나이 필드를 가진 Person 클래스를 선언하고
+   ArrayList 컬렉션 클래스에  Person 객체를 요소로 추가하고 
+   이름으로 오름차순 정렬해서    출력하는 코딩을 하세요 .. 
+
+	public class Ex01 {
+		public static void main(String[] args) {
+			
+		Person p1 = new Person("lee", 20);
+		Person p2 = new Person("kim", 25);
+		
+		ArrayList<String> personList = new ArrayList<String>();
+		personList.add(p1.name);
+		personList.add(p2.name);
+		
+		Collections.sort(personList);
+		
+		System.out.println(personList);
+			
+		
+		}
+	}
+	
+	
+	class Person {
+		
+		String name;
+		int age;
+		
+		public Person(String name, int age) {
+			super();
+			this.name = name;
+			this.age = age;
+		}
+	
+		public Person() {
+			super();
+		}
+		
+	}
+	
+	
+	  
