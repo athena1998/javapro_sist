@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="stop"/>
 		<list key="findhistory">
+			<item value="oa"/>
 			<item value="일시정지"/>
 			<item value="addPhoneNo"/>
 			<item value="trim"/>
@@ -22,7 +23,6 @@
 			<item value="System"/>
 			<item value="local"/>
 			<item value="limit"/>
-			<item value="randomArr"/>
 		</list>
 		<list key="replacehistory">
 			<item value="stop"/>

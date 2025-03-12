@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.1.0">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1221" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="경기모드 선택&lt;div&gt;(3경기 / 5경기)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="55" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-0" target="43XMM6MiabJbt-BklJYa-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-0" value="선수 정보 입력&amp;nbsp;&lt;div&gt;(서버/리시버 지정)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="145" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-1" target="43XMM6MiabJbt-BklJYa-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-1" value="포인트 획득 시&amp;nbsp;&lt;div&gt;점수 변경&amp;nbsp;&lt;div&gt;(0 → 15 → 30 → 40)&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-4" target="43XMM6MiabJbt-BklJYa-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-4" value="점수가 40:40 인가?&lt;div&gt;듀스 진행&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="350" y="335" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-5" target="43XMM6MiabJbt-BklJYa-66" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-5" value="&lt;font&gt;첫번째 포인트를 딴 선수가 어드벤티지를 획득&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="350" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-37" target="43XMM6MiabJbt-BklJYa-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-37" target="43XMM6MiabJbt-BklJYa-49" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-37" value="&lt;font&gt;2포인트 이상 차이가&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font&gt;나는가?&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font&gt;(40-0, 40-15, 40-30)&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="335" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-48" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="290" y="353" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-49" target="43XMM6MiabJbt-BklJYa-57" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-49" value="&lt;font&gt;게임 종료 후 세트 점수 갱신&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-57" target="43XMM6MiabJbt-BklJYa-59" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-57" target="43XMM6MiabJbt-BklJYa-78" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-57" value="선수간 세트 점수가 2점 차이가 나는가 ?&lt;div&gt;(7-5, 6-4)&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="675" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-59" target="43XMM6MiabJbt-BklJYa-61" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-59" target="43XMM6MiabJbt-BklJYa-61" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-59" value="6-6 동점 인가?" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="370" y="675" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-61" target="43XMM6MiabJbt-BklJYa-81" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-61" target="43XMM6MiabJbt-BklJYa-78" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-61" value="타이브레이크에서&amp;nbsp;&lt;div&gt;2점 이상 차이가 나는가?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="370" y="805" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-63" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="290" y="693" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-65" value="yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="430" y="765" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-66" target="43XMM6MiabJbt-BklJYa-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="585" />
+              <mxPoint x="510" y="375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-66" target="43XMM6MiabJbt-BklJYa-49" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-66" value="&lt;font&gt;첫번째 포인트를 딴 선수가 추가득점을 하였나?&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="355" y="545" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-72" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="504" y="450" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-73" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="203" y="465" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-74" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="405" y="415" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-78" target="43XMM6MiabJbt-BklJYa-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-78" value="세트 종료 후 세트 승리자 판별" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="815" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-81" value="2점 차이가 날때까지&amp;nbsp;&lt;div&gt;타이브레이크 진행&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="585" y="815" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-83" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="514" y="821" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-84" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="203" y="765" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-86" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="300" y="562" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-90" value="yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="310" y="819" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-91" value="경기 종료 후 우승자 및 점수 확인 메시지 출력" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="1055" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="43XMM6MiabJbt-BklJYa-93" target="43XMM6MiabJbt-BklJYa-91" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43XMM6MiabJbt-BklJYa-93" value="3판 2선승제 / 5판 3선승제 적용" style="whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="150" y="935" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
