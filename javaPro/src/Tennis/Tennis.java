@@ -2,7 +2,9 @@ package Tennis;
 
 public class Tennis {
 	public static void main(String[] args) {
-        Status status = new Status("홍길동", "강아지", false, 0, 0, 0, 0, 0, 0);
+		
+		// 							선수1	 선수2 	   복식/단식  	세트번호	게임번호	포인트??	듀스 포인트??		??		??
+        Status status = new Status("홍길동", "강아지", false, 		0, 			0, 			0, 			0, 					0, 		0);
         
         status.player1Point = 15;
         status.dispScoreBoard();

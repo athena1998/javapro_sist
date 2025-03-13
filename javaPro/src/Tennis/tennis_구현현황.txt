@@ -1,0 +1,317 @@
+완료된거 : 
+게임 경기 진행 
+게임 별 스코어 조회 
+게임 내 듀스 어드벤티지 
+
+아직 안한거 :
+타이브레이크
+세트 우승자 판별
+전체 경기 우승자 판별 (3판2선승제 / 5판3선승제)
+pointWinner 인터페이스 적용 -> (현재는 pointWinner 를 메소드 명으로 쓰고있음.. )
+disp 메소드 구현
+파일 출력 구현
+
+구현 결과:
+
+[단식]
+
+단식/복식 : 1
+어드벤티지 세트 / 타이브레이크 세트 : 2
+첫번째 선수 입력 : p1
+두번째 선수 입력 : p2
+3판2선승제 / 5판3선승제 선택 : 3
+--------------------------------------------------
+[Starting game] p2 serving.
+p1 Point 0 : p2 Point 0
+p1 Point 15 : p2 Point 0
+p1 Point 15 : p2 Point 15
+p1 Point 15 : p2 Point 30
+p1 Point 15 : p2 Point 40
+Next Point player p2
+p2 wins the game!
+
+[Game Score]
+p1 0 : p2 1
+--------------------------------------------------
+[Starting game] p1 serving.
+p1 Point 0 : p2 Point 0
+p1 Point 0 : p2 Point 15
+p1 Point 15 : p2 Point 15
+p1 Point 15 : p2 Point 30
+p1 Point 15 : p2 Point 40
+Next Point player p2
+p2 wins the game!
+
+[Game Score]
+p1 0 : p2 2
+--------------------------------------------------
+[Starting game] p2 serving.
+p1 Point 0 : p2 Point 0
+p1 Point 0 : p2 Point 15
+p1 Point 15 : p2 Point 15
+p1 Point 30 : p2 Point 15
+p1 Point 30 : p2 Point 30
+p1 Point 30 : p2 Point 40
+Next Point player p2
+p2 wins the game!
+
+[Game Score]
+p1 0 : p2 3
+--------------------------------------------------
+[Starting game] p1 serving.
+p1 Point 0 : p2 Point 0
+p1 Point 15 : p2 Point 0
+p1 Point 30 : p2 Point 0
+p1 Point 30 : p2 Point 15
+p1 Point 40 : p2 Point 15
+p1 Point 40 : p2 Point 30
+p1 Point 40 : p2 Point 40
+Deuce!
+advantage : p2
+advantage : p1
+advantage : p1
+p1 wins the game!
+
+[Game Score]
+p1 1 : p2 3
+--------------------------------------------------
+[Starting game] p2 serving.
+p1 Point 0 : p2 Point 0
+p1 Point 0 : p2 Point 15
+p1 Point 15 : p2 Point 15
+p1 Point 30 : p2 Point 15
+p1 Point 30 : p2 Point 30
+p1 Point 30 : p2 Point 40
+Next Point player p2
+p2 wins the game!
+
+[Game Score]
+p1 1 : p2 4
+--------------------------------------------------
+[Starting game] p1 serving.
+p1 Point 0 : p2 Point 0
+p1 Point 0 : p2 Point 15
+p1 Point 15 : p2 Point 15
+p1 Point 15 : p2 Point 30
+p1 Point 30 : p2 Point 30
+p1 Point 40 : p2 Point 30
+Next Point player p1
+p1 wins the game!
+
+[Game Score]
+p1 2 : p2 4
+--------------------------------------------------
+[Starting game] p2 serving.
+p1 Point 0 : p2 Point 0
+p1 Point 0 : p2 Point 15
+p1 Point 15 : p2 Point 15
+p1 Point 15 : p2 Point 30
+p1 Point 30 : p2 Point 30
+p1 Point 40 : p2 Point 30
+p1 Point 40 : p2 Point 40
+Deuce!
+advantage : p2
+advantage : p2
+p2 wins the game!
+
+[Game Score]
+p1 2 : p2 5
+--------------------------------------------------
+[Starting game] p1 serving.
+p1 Point 0 : p2 Point 0
+p1 Point 15 : p2 Point 0
+p1 Point 15 : p2 Point 15
+p1 Point 30 : p2 Point 15
+p1 Point 40 : p2 Point 15
+Next Point player p1
+p1 wins the game!
+
+[Game Score]
+p1 3 : p2 5
+--------------------------------------------------
+[Starting game] p2 serving.
+p1 Point 0 : p2 Point 0
+p1 Point 15 : p2 Point 0
+p1 Point 15 : p2 Point 15
+p1 Point 30 : p2 Point 15
+p1 Point 30 : p2 Point 30
+p1 Point 30 : p2 Point 40
+p1 Point 40 : p2 Point 40
+Deuce!
+advantage : p2
+advantage : p2
+p2 wins the game!
+
+[Game Score]
+p1 3 : p2 6
+--------------------------------------------------
+[Starting game] p1 serving.
+p1 Point 0 : p2 Point 0
+p1 Point 15 : p2 Point 0
+p1 Point 15 : p2 Point 15
+p1 Point 30 : p2 Point 15
+p1 Point 30 : p2 Point 30
+p1 Point 30 : p2 Point 40
+p1 Point 40 : p2 Point 40
+Deuce!
+advantage : p2
+advantage : p2
+p2 wins the game!
+
+[Game Score]
+p1 3 : p2 7
+--------------------------------------------------
+
+
+[복식]
+
+단식/복식 : 2
+어드벤티지 세트 / 타이브레이크 세트 : 2 // 아직 안함
+첫번째 팀 입력 : team1
+  첫번째 선수 입력 : p1
+  두번째 선수 입력 : p2
+두번째 팀 입력 : team2
+  첫번째 선수 입력 : p1
+  두번째 선수 입력 : p2
+3판2선승제 / 5판3선승제 선택 : 3 // 아직 안함
+--------------------------------------------------
+[Starting game] team2 serving.
+team1 Point 0 : team2 Point 0
+team1 Point 15 : team2 Point 0
+team1 Point 15 : team2 Point 15
+team1 Point 15 : team2 Point 30
+team1 Point 15 : team2 Point 40
+team1 Point 30 : team2 Point 40
+team1 Point 40 : team2 Point 40
+Deuce!
+advantage : team2
+advantage : team1
+advantage : team2
+advantage : team2
+team2 wins the game!
+
+[Game Score]
+team1 0 : team2 1
+--------------------------------------------------
+[Starting game] team1 serving.
+team1 Point 0 : team2 Point 0
+team1 Point 15 : team2 Point 0
+team1 Point 30 : team2 Point 0
+team1 Point 30 : team2 Point 15
+team1 Point 40 : team2 Point 15
+Next Point player team1
+team1 wins the game!
+
+[Game Score]
+team1 1 : team2 1
+--------------------------------------------------
+[Starting game] team2 serving.
+team1 Point 0 : team2 Point 0
+team1 Point 0 : team2 Point 15
+team1 Point 15 : team2 Point 15
+team1 Point 15 : team2 Point 30
+team1 Point 15 : team2 Point 40
+Next Point player team2
+team2 wins the game!
+
+[Game Score]
+team1 1 : team2 2
+--------------------------------------------------
+[Starting game] team1 serving.
+team1 Point 0 : team2 Point 0
+team1 Point 0 : team2 Point 15
+team1 Point 15 : team2 Point 15
+team1 Point 30 : team2 Point 15
+team1 Point 40 : team2 Point 15
+Next Point player team1
+team1 wins the game!
+
+[Game Score]
+team1 2 : team2 2
+--------------------------------------------------
+[Starting game] team2 serving.
+team1 Point 0 : team2 Point 0
+team1 Point 0 : team2 Point 15
+team1 Point 0 : team2 Point 30
+team1 Point 15 : team2 Point 30
+team1 Point 30 : team2 Point 30
+team1 Point 40 : team2 Point 30
+team1 Point 40 : team2 Point 40
+Deuce!
+advantage : team2
+advantage : team2
+team2 wins the game!
+
+[Game Score]
+team1 2 : team2 3
+--------------------------------------------------
+[Starting game] team1 serving.
+team1 Point 0 : team2 Point 0
+team1 Point 15 : team2 Point 0
+team1 Point 15 : team2 Point 15
+team1 Point 30 : team2 Point 15
+team1 Point 40 : team2 Point 15
+Next Point player team1
+team1 wins the game!
+
+[Game Score]
+team1 3 : team2 3
+--------------------------------------------------
+[Starting game] team2 serving.
+team1 Point 0 : team2 Point 0
+team1 Point 15 : team2 Point 0
+team1 Point 15 : team2 Point 15
+team1 Point 30 : team2 Point 15
+team1 Point 40 : team2 Point 15
+Next Point player team1
+team1 wins the game!
+
+[Game Score]
+team1 4 : team2 3
+--------------------------------------------------
+[Starting game] team1 serving.
+team1 Point 0 : team2 Point 0
+team1 Point 15 : team2 Point 0
+team1 Point 15 : team2 Point 15
+team1 Point 30 : team2 Point 15
+team1 Point 30 : team2 Point 30
+team1 Point 40 : team2 Point 30
+team1 Point 40 : team2 Point 40
+Deuce!
+advantage : team1
+advantage : team1
+team1 wins the game!
+
+[Game Score]
+team1 5 : team2 3
+--------------------------------------------------
+[Starting game] team2 serving.
+team1 Point 0 : team2 Point 0
+team1 Point 0 : team2 Point 15
+team1 Point 0 : team2 Point 30
+team1 Point 15 : team2 Point 30
+team1 Point 15 : team2 Point 40
+team1 Point 30 : team2 Point 40
+team1 Point 40 : team2 Point 40
+Deuce!
+advantage : team2
+advantage : team1
+advantage : team1
+team1 wins the game!
+
+[Game Score]
+team1 6 : team2 3
+--------------------------------------------------
+[Starting game] team1 serving.
+team1 Point 0 : team2 Point 0
+team1 Point 0 : team2 Point 15
+team1 Point 15 : team2 Point 15
+team1 Point 30 : team2 Point 15
+team1 Point 30 : team2 Point 30
+team1 Point 40 : team2 Point 30
+Next Point player team1
+team1 wins the game!
+
+[Game Score]
+team1 7 : team2 3
+--------------------------------------------------

@@ -36,6 +36,7 @@ enum Score {
 	   String temName1;
 	   String temName2;
 	   
+
 	   int serve = 1;
 	   
 	   int player1Point;
@@ -52,6 +53,9 @@ enum Score {
 	   
 	   boolean bDual = false;
 	   boolean bDuece = false;
+	   
+	   boolean isAdvantagePlayer1 = false;  // 어드밴티지 상태 설정
+	   boolean isAdvantagePlayer2 = false;
 
 	   public Status(String Name1, String Name2, boolean bDual, int ...args) {
 	      super();
@@ -150,6 +154,7 @@ enum Score {
 	       * ......................
 	       */
 	      
+	      
 	      sMsg = "\nPlayer\t\tServe\tSet\tGame\tPoint\n";
 	      sMsg += "-".repeat(60) + "\n";         
 	      sMsg += String.format("%s\t\t%s\t%2d\t%2d\t%3s\n", playerName1, (serve == 1 ? "Serve" : ""), player1Set, player1Game, (!bDuece ? player1Point : Score.getPointNameByPoint(player1Point)));
@@ -159,7 +164,7 @@ enum Score {
 	      {
 	         String AdvPlayer1 = (player1Point == 41 ? playerName1 : "") + "   ";
 	         String AdvPlayer2 = (player2Point == 41 ? playerName2 : "") + "   ";
-	         
+
 	         sMsg += String.format("\nSpeak > %s\n", (serve == 1 ? AdvPlayer1 + Score.getPointNameByPoint(player1Point) + "  " + AdvPlayer2 + Score.getPointNameByPoint(player2Point) 
 	         : AdvPlayer2 + Score.getPointNameByPoint(player2Point) + "  " + AdvPlayer1 + Score.getPointNameByPoint(player1Point)));
 	      }
@@ -172,9 +177,10 @@ enum Score {
 	            sMsg += String.format("\nSpeak > %s\n", "Duece");
 	            bDuece = true;
 	         }         
-	         sMsg += "=".repeat(60);         
+	         sMsg += "=".repeat(60);
 	      }      
 	      
 	      System.out.println(sMsg);
+	      
 	   }   
 	}

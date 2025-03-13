@@ -14,6 +14,7 @@ public class Ex03 {
 		
 		// 임시직 객체 생성
 		Employee emp4 = new Temp("jeong", "서울 강북", "010-3232-1322", "2022-03-21", 15, 20);
+		System.out.println();
 		emp4.dispEmpInfo();
 
 	} // main
