@@ -1,317 +1,1010 @@
-완료된거 : 
-게임 경기 진행 
-게임 별 스코어 조회 
-게임 내 듀스 어드벤티지 
-
-아직 안한거 :
-타이브레이크
-세트 우승자 판별
-전체 경기 우승자 판별 (3판2선승제 / 5판3선승제)
-pointWinner 인터페이스 적용 -> (현재는 pointWinner 를 메소드 명으로 쓰고있음.. )
-disp 메소드 구현
-파일 출력 구현
-
-구현 결과:
-
-[단식]
-
 단식/복식 : 1
 어드벤티지 세트 / 타이브레이크 세트 : 2
 첫번째 선수 입력 : p1
 두번째 선수 입력 : p2
-3판2선승제 / 5판3선승제 선택 : 3
---------------------------------------------------
-[Starting game] p2 serving.
-p1 Point 0 : p2 Point 0
-p1 Point 15 : p2 Point 0
-p1 Point 15 : p2 Point 15
-p1 Point 15 : p2 Point 30
-p1 Point 15 : p2 Point 40
-Next Point player p2
-p2 wins the game!
+3판2선승제 / 5판3선승제 선택 : 5
+------------------------------------------------------------
 
-[Game Score]
-p1 0 : p2 1
---------------------------------------------------
-[Starting game] p1 serving.
-p1 Point 0 : p2 Point 0
-p1 Point 0 : p2 Point 15
-p1 Point 15 : p2 Point 15
-p1 Point 15 : p2 Point 30
-p1 Point 15 : p2 Point 40
-Next Point player p2
-p2 wins the game!
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 0	  0
+p2			 0	 0	  0
 
-[Game Score]
-p1 0 : p2 2
---------------------------------------------------
-[Starting game] p2 serving.
-p1 Point 0 : p2 Point 0
-p1 Point 0 : p2 Point 15
-p1 Point 15 : p2 Point 15
-p1 Point 30 : p2 Point 15
-p1 Point 30 : p2 Point 30
-p1 Point 30 : p2 Point 40
-Next Point player p2
-p2 wins the game!
+Speak > LOVE  LOVE
+============================================================
 
-[Game Score]
-p1 0 : p2 3
---------------------------------------------------
-[Starting game] p1 serving.
-p1 Point 0 : p2 Point 0
-p1 Point 15 : p2 Point 0
-p1 Point 30 : p2 Point 0
-p1 Point 30 : p2 Point 15
-p1 Point 40 : p2 Point 15
-p1 Point 40 : p2 Point 30
-p1 Point 40 : p2 Point 40
-Deuce!
-advantage : p2
-advantage : p1
-advantage : p1
-p1 wins the game!
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 0	 15
+p2			 0	 0	  0
 
-[Game Score]
-p1 1 : p2 3
---------------------------------------------------
-[Starting game] p2 serving.
-p1 Point 0 : p2 Point 0
-p1 Point 0 : p2 Point 15
-p1 Point 15 : p2 Point 15
-p1 Point 30 : p2 Point 15
-p1 Point 30 : p2 Point 30
-p1 Point 30 : p2 Point 40
-Next Point player p2
-p2 wins the game!
+Speak > FIFTEEN  LOVE
+============================================================
 
-[Game Score]
-p1 1 : p2 4
---------------------------------------------------
-[Starting game] p1 serving.
-p1 Point 0 : p2 Point 0
-p1 Point 0 : p2 Point 15
-p1 Point 15 : p2 Point 15
-p1 Point 15 : p2 Point 30
-p1 Point 30 : p2 Point 30
-p1 Point 40 : p2 Point 30
-Next Point player p1
-p1 wins the game!
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 0	 30
+p2			 0	 0	  0
 
-[Game Score]
-p1 2 : p2 4
---------------------------------------------------
-[Starting game] p2 serving.
-p1 Point 0 : p2 Point 0
-p1 Point 0 : p2 Point 15
-p1 Point 15 : p2 Point 15
-p1 Point 15 : p2 Point 30
-p1 Point 30 : p2 Point 30
-p1 Point 40 : p2 Point 30
-p1 Point 40 : p2 Point 40
-Deuce!
-advantage : p2
-advantage : p2
-p2 wins the game!
+Speak > THIRTY  LOVE
+============================================================
 
-[Game Score]
-p1 2 : p2 5
---------------------------------------------------
-[Starting game] p1 serving.
-p1 Point 0 : p2 Point 0
-p1 Point 15 : p2 Point 0
-p1 Point 15 : p2 Point 15
-p1 Point 30 : p2 Point 15
-p1 Point 40 : p2 Point 15
-Next Point player p1
-p1 wins the game!
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 0	 40
+p2			 0	 0	  0
 
-[Game Score]
-p1 3 : p2 5
---------------------------------------------------
-[Starting game] p2 serving.
-p1 Point 0 : p2 Point 0
-p1 Point 15 : p2 Point 0
-p1 Point 15 : p2 Point 15
-p1 Point 30 : p2 Point 15
-p1 Point 30 : p2 Point 30
-p1 Point 30 : p2 Point 40
-p1 Point 40 : p2 Point 40
-Deuce!
-advantage : p2
-advantage : p2
-p2 wins the game!
+Speak > FOURTY  LOVE
+============================================================
+[Speak > GAME OVER WINNER : p1 ] 
+============================================================
 
-[Game Score]
-p1 3 : p2 6
---------------------------------------------------
-[Starting game] p1 serving.
-p1 Point 0 : p2 Point 0
-p1 Point 15 : p2 Point 0
-p1 Point 15 : p2 Point 15
-p1 Point 30 : p2 Point 15
-p1 Point 30 : p2 Point 30
-p1 Point 30 : p2 Point 40
-p1 Point 40 : p2 Point 40
-Deuce!
-advantage : p2
-advantage : p2
-p2 wins the game!
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 1	  0
+p2		Serve	 0	 0	  0
 
-[Game Score]
-p1 3 : p2 7
---------------------------------------------------
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 1	  0
+p2		Serve	 0	 0	 15
+
+Speak > FIFTEEN  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 1	 15
+p2		Serve	 0	 0	 15
+
+Speak > FIFTEEN  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 1	 15
+p2		Serve	 0	 0	 30
+
+Speak > THIRTY  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 1	 15
+p2		Serve	 0	 0	 40
+
+Speak > FOURTY  FIFTEEN
+============================================================
+[Speak > GAME OVER WINNER : p2 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 1	  0
+p2			 0	 1	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 1	 15
+p2			 0	 1	  0
+
+Speak > FIFTEEN  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 1	 30
+p2			 0	 1	  0
+
+Speak > THIRTY  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 1	 30
+p2			 0	 1	 15
+
+Speak > THIRTY  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 1	 30
+p2			 0	 1	 30
+
+Speak > THIRTY  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 1	 30
+p2			 0	 1	 40
+
+Speak > THIRTY  FOURTY
+============================================================
+[Speak > GAME OVER WINNER : p2 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 1	  0
+p2		Serve	 0	 2	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 1	 15
+p2		Serve	 0	 2	  0
+
+Speak > LOVE  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 1	 15
+p2		Serve	 0	 2	 15
+
+Speak > FIFTEEN  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 1	 30
+p2		Serve	 0	 2	 15
+
+Speak > FIFTEEN  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 1	 40
+p2		Serve	 0	 2	 15
+
+Speak > FIFTEEN  FOURTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 1	 40
+p2		Serve	 0	 2	 30
+
+Speak > THIRTY  FOURTY
+============================================================
+[Speak > GAME OVER WINNER : p1 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 2	  0
+p2			 0	 2	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 2	 15
+p2			 0	 2	  0
+
+Speak > FIFTEEN  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 2	 30
+p2			 0	 2	  0
+
+Speak > THIRTY  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 2	 30
+p2			 0	 2	 15
+
+Speak > THIRTY  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 2	 30
+p2			 0	 2	 30
+
+Speak > THIRTY  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 2	 40
+p2			 0	 2	 30
+
+Speak > FOURTY  THIRTY
+============================================================
+[Speak > GAME OVER WINNER : p1 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 3	  0
+p2		Serve	 0	 2	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 3	 15
+p2		Serve	 0	 2	  0
+
+Speak > LOVE  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 3	 30
+p2		Serve	 0	 2	  0
+
+Speak > LOVE  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 3	 40
+p2		Serve	 0	 2	  0
+
+Speak > LOVE  FOURTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 3	 40
+p2		Serve	 0	 2	 15
+
+Speak > FIFTEEN  FOURTY
+============================================================
+[Speak > GAME OVER WINNER : p1 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 4	  0
+p2			 0	 2	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 4	 15
+p2			 0	 2	  0
+
+Speak > FIFTEEN  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 4	 30
+p2			 0	 2	  0
+
+Speak > THIRTY  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 4	 30
+p2			 0	 2	 15
+
+Speak > THIRTY  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 4	 30
+p2			 0	 2	 30
+
+Speak > THIRTY  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 4	 40
+p2			 0	 2	 30
+
+Speak > FOURTY  THIRTY
+============================================================
+[Speak > GAME OVER WINNER : p1 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 5	  0
+p2		Serve	 0	 2	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 5	  0
+p2		Serve	 0	 2	 15
+
+Speak > FIFTEEN  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 5	  0
+p2		Serve	 0	 2	 30
+
+Speak > THIRTY  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 5	  0
+p2		Serve	 0	 2	 40
+
+Speak > FOURTY  LOVE
+============================================================
+[Speak > GAME OVER WINNER : p2 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 5	  0
+p2			 0	 3	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 5	  0
+p2			 0	 3	 15
+
+Speak > LOVE  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 5	 15
+p2			 0	 3	 15
+
+Speak > FIFTEEN  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 5	 30
+p2			 0	 3	 15
+
+Speak > THIRTY  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 5	 30
+p2			 0	 3	 30
+
+Speak > THIRTY  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 5	 40
+p2			 0	 3	 30
+
+Speak > FOURTY  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 5	 40
+p2			 0	 3	 40
+
+Speak > [Deuce]
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 5	AD  
+p2			 0	 3	   
+
+Speak > AD   p1
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 5	AD  
+p2			 0	 3	   
+
+Speak > AD   p1
+============================================================
+[Speak > GAME OVER WINNER : p1 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	  0
+p2		Serve	 0	 3	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	 15
+p2		Serve	 0	 3	  0
+
+Speak > LOVE  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	 15
+p2		Serve	 0	 3	 15
+
+Speak > FIFTEEN  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	 15
+p2		Serve	 0	 3	 30
+
+Speak > THIRTY  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	 30
+p2		Serve	 0	 3	 30
+
+Speak > THIRTY  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	 30
+p2		Serve	 0	 3	 40
+
+Speak > FOURTY  THIRTY
+============================================================
+[Speak > GAME OVER WINNER : p2 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	  0
+p2			 0	 4	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	 15
+p2			 0	 4	  0
+
+Speak > FIFTEEN  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	 15
+p2			 0	 4	 15
+
+Speak > FIFTEEN  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	 15
+p2			 0	 4	 30
+
+Speak > FIFTEEN  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	 15
+p2			 0	 4	 40
+
+Speak > FIFTEEN  FOURTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	 30
+p2			 0	 4	 40
+
+Speak > THIRTY  FOURTY
+============================================================
+[Speak > GAME OVER WINNER : p2 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	  0
+p2		Serve	 0	 5	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	  0
+p2		Serve	 0	 5	 15
+
+Speak > FIFTEEN  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	  0
+p2		Serve	 0	 5	 30
+
+Speak > THIRTY  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	 15
+p2		Serve	 0	 5	 30
+
+Speak > THIRTY  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	 15
+p2		Serve	 0	 5	 40
+
+Speak > FOURTY  FIFTEEN
+============================================================
+[Speak > GAME OVER WINNER : p2 ] 
+============================================================
 
 
-[복식]
+Speak > [TieBreak Start]
 
-단식/복식 : 2
-어드벤티지 세트 / 타이브레이크 세트 : 2 // 아직 안함
-첫번째 팀 입력 : team1
-  첫번째 선수 입력 : p1
-  두번째 선수 입력 : p2
-두번째 팀 입력 : team2
-  첫번째 선수 입력 : p1
-  두번째 선수 입력 : p2
-3판2선승제 / 5판3선승제 선택 : 3 // 아직 안함
---------------------------------------------------
-[Starting game] team2 serving.
-team1 Point 0 : team2 Point 0
-team1 Point 15 : team2 Point 0
-team1 Point 15 : team2 Point 15
-team1 Point 15 : team2 Point 30
-team1 Point 15 : team2 Point 40
-team1 Point 30 : team2 Point 40
-team1 Point 40 : team2 Point 40
-Deuce!
-advantage : team2
-advantage : team1
-advantage : team2
-advantage : team2
-team2 wins the game!
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	  0
+p2		Serve	 0	 6	  1
 
-[Game Score]
-team1 0 : team2 1
---------------------------------------------------
-[Starting game] team1 serving.
-team1 Point 0 : team2 Point 0
-team1 Point 15 : team2 Point 0
-team1 Point 30 : team2 Point 0
-team1 Point 30 : team2 Point 15
-team1 Point 40 : team2 Point 15
-Next Point player team1
-team1 wins the game!
 
-[Game Score]
-team1 1 : team2 1
---------------------------------------------------
-[Starting game] team2 serving.
-team1 Point 0 : team2 Point 0
-team1 Point 0 : team2 Point 15
-team1 Point 15 : team2 Point 15
-team1 Point 15 : team2 Point 30
-team1 Point 15 : team2 Point 40
-Next Point player team2
-team2 wins the game!
+Speak > [TieBreak Start]
 
-[Game Score]
-team1 1 : team2 2
---------------------------------------------------
-[Starting game] team1 serving.
-team1 Point 0 : team2 Point 0
-team1 Point 0 : team2 Point 15
-team1 Point 15 : team2 Point 15
-team1 Point 30 : team2 Point 15
-team1 Point 40 : team2 Point 15
-Next Point player team1
-team1 wins the game!
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	  0
+p2		Serve	 0	 6	  2
 
-[Game Score]
-team1 2 : team2 2
---------------------------------------------------
-[Starting game] team2 serving.
-team1 Point 0 : team2 Point 0
-team1 Point 0 : team2 Point 15
-team1 Point 0 : team2 Point 30
-team1 Point 15 : team2 Point 30
-team1 Point 30 : team2 Point 30
-team1 Point 40 : team2 Point 30
-team1 Point 40 : team2 Point 40
-Deuce!
-advantage : team2
-advantage : team2
-team2 wins the game!
 
-[Game Score]
-team1 2 : team2 3
---------------------------------------------------
-[Starting game] team1 serving.
-team1 Point 0 : team2 Point 0
-team1 Point 15 : team2 Point 0
-team1 Point 15 : team2 Point 15
-team1 Point 30 : team2 Point 15
-team1 Point 40 : team2 Point 15
-Next Point player team1
-team1 wins the game!
+Speak > [TieBreak Start]
 
-[Game Score]
-team1 3 : team2 3
---------------------------------------------------
-[Starting game] team2 serving.
-team1 Point 0 : team2 Point 0
-team1 Point 15 : team2 Point 0
-team1 Point 15 : team2 Point 15
-team1 Point 30 : team2 Point 15
-team1 Point 40 : team2 Point 15
-Next Point player team1
-team1 wins the game!
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	  1
+p2			 0	 6	  2
 
-[Game Score]
-team1 4 : team2 3
---------------------------------------------------
-[Starting game] team1 serving.
-team1 Point 0 : team2 Point 0
-team1 Point 15 : team2 Point 0
-team1 Point 15 : team2 Point 15
-team1 Point 30 : team2 Point 15
-team1 Point 30 : team2 Point 30
-team1 Point 40 : team2 Point 30
-team1 Point 40 : team2 Point 40
-Deuce!
-advantage : team1
-advantage : team1
-team1 wins the game!
 
-[Game Score]
-team1 5 : team2 3
---------------------------------------------------
-[Starting game] team2 serving.
-team1 Point 0 : team2 Point 0
-team1 Point 0 : team2 Point 15
-team1 Point 0 : team2 Point 30
-team1 Point 15 : team2 Point 30
-team1 Point 15 : team2 Point 40
-team1 Point 30 : team2 Point 40
-team1 Point 40 : team2 Point 40
-Deuce!
-advantage : team2
-advantage : team1
-advantage : team1
-team1 wins the game!
+Speak > [TieBreak Start]
 
-[Game Score]
-team1 6 : team2 3
---------------------------------------------------
-[Starting game] team1 serving.
-team1 Point 0 : team2 Point 0
-team1 Point 0 : team2 Point 15
-team1 Point 15 : team2 Point 15
-team1 Point 30 : team2 Point 15
-team1 Point 30 : team2 Point 30
-team1 Point 40 : team2 Point 30
-Next Point player team1
-team1 wins the game!
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	  1
+p2			 0	 6	  3
 
-[Game Score]
-team1 7 : team2 3
---------------------------------------------------
+
+Speak > [TieBreak Start]
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	  1
+p2		Serve	 0	 6	  4
+
+
+Speak > [TieBreak Start]
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	  2
+p2		Serve	 0	 6	  4
+
+
+Speak > [TieBreak Start]
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	  2
+p2			 0	 6	  5
+
+
+Speak > [TieBreak Start]
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	  2
+p2			 0	 6	  6
+
+
+Speak > [TieBreak Start]
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	  3
+p2		Serve	 0	 6	  6
+
+
+Speak > [TieBreak Start]
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 6	  4
+p2		Serve	 0	 6	  6
+
+
+[Tiebreak Score]
+p1 4 : p2 7
+
+[Set Win] p2 0 : 1 
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	  0
+p2			 0	 6	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	  0
+p2			 0	 6	 15
+
+Speak > LOVE  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	  0
+p2			 0	 6	 30
+
+Speak > LOVE  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	 15
+p2			 0	 6	 30
+
+Speak > FIFTEEN  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	 30
+p2			 0	 6	 30
+
+Speak > THIRTY  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 0	 6	 40
+p2			 0	 6	 30
+
+Speak > FOURTY  THIRTY
+============================================================
+[Speak > GAME OVER WINNER : p1 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 7	  0
+p2		Serve	 0	 6	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 7	  0
+p2		Serve	 0	 6	 15
+
+Speak > FIFTEEN  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 7	 15
+p2		Serve	 0	 6	 15
+
+Speak > FIFTEEN  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 7	 30
+p2		Serve	 0	 6	 15
+
+Speak > FIFTEEN  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 0	 7	 40
+p2		Serve	 0	 6	 15
+
+Speak > FIFTEEN  FOURTY
+============================================================
+[Speak > GAME OVER WINNER : p1 ] 
+============================================================
+
+[Total Game Score]
+p1 8 : p2 6
+
+[Set Win] p1 1 : 0 
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	  0
+p2			 0	 6	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	  0
+p2			 0	 6	 15
+
+Speak > LOVE  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	  0
+p2			 0	 6	 30
+
+Speak > LOVE  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	 15
+p2			 0	 6	 30
+
+Speak > FIFTEEN  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	 30
+p2			 0	 6	 30
+
+Speak > THIRTY  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	 30
+p2			 0	 6	 40
+
+Speak > THIRTY  FOURTY
+============================================================
+[Speak > GAME OVER WINNER : p2 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 1	 8	  0
+p2		Serve	 0	 7	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 1	 8	  0
+p2		Serve	 0	 7	 15
+
+Speak > FIFTEEN  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 1	 8	  0
+p2		Serve	 0	 7	 30
+
+Speak > THIRTY  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 1	 8	  0
+p2		Serve	 0	 7	 40
+
+Speak > FOURTY  LOVE
+============================================================
+[Speak > GAME OVER WINNER : p2 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	  0
+p2			 0	 8	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	  0
+p2			 0	 8	 15
+
+Speak > LOVE  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	 15
+p2			 0	 8	 15
+
+Speak > FIFTEEN  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	 15
+p2			 0	 8	 30
+
+Speak > FIFTEEN  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	 30
+p2			 0	 8	 30
+
+Speak > THIRTY  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	 30
+p2			 0	 8	 40
+
+Speak > THIRTY  FOURTY
+============================================================
+[Speak > GAME OVER WINNER : p2 ] 
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 1	 8	  0
+p2		Serve	 0	 9	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 1	 8	  0
+p2		Serve	 0	 9	 15
+
+Speak > FIFTEEN  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 1	 8	  0
+p2		Serve	 0	 9	 30
+
+Speak > THIRTY  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 1	 8	  0
+p2		Serve	 0	 9	 40
+
+Speak > FOURTY  LOVE
+============================================================
+[Speak > GAME OVER WINNER : p2 ] 
+============================================================
+
+[Total Game Score]
+p1 8 : p2 10
+
+[Set Win] p2 1 : 1 
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	  0
+p2			 1	10	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	  0
+p2			 1	10	 15
+
+Speak > LOVE  FIFTEEN
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	  0
+p2			 1	10	 30
+
+Speak > LOVE  THIRTY
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1		Serve	 1	 8	  0
+p2			 1	10	 40
+
+Speak > LOVE  FOURTY
+============================================================
+[Speak > GAME OVER WINNER : p2 ] 
+============================================================
+
+[Total Game Score]
+p1 8 : p2 11
+
+[Set Win] p2 1 : 2 
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 1	 8	  0
+p2		Serve	 2	11	  0
+
+Speak > LOVE  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 1	 8	  0
+p2		Serve	 2	11	 15
+
+Speak > FIFTEEN  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 1	 8	  0
+p2		Serve	 2	11	 30
+
+Speak > THIRTY  LOVE
+============================================================
+
+Player		Serve	Set	Game	Point
+------------------------------------------------------------
+p1			 1	 8	  0
+p2		Serve	 2	11	 40
+
+Speak > FOURTY  LOVE
+============================================================
+[Speak > GAME OVER WINNER : p2 ] 
+============================================================
+
+[Total Game Score]
+p1 8 : p2 12
+
+[Set Win] p2 1 : 3 
+
+[Match Win] p2 1 : 3 
